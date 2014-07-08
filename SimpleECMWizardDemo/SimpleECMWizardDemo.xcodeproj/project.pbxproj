@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C73AB6DA196470DD000AE82C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73AB6D9196470DD000AE82C /* Foundation.framework */; };
+		C73AB6DC196470DD000AE82C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73AB6DB196470DD000AE82C /* CoreGraphics.framework */; };
+		C73AB6DE196470DD000AE82C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73AB6DD196470DD000AE82C /* UIKit.framework */; };
+		C73AB6E4196470DD000AE82C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C73AB6E2196470DD000AE82C /* InfoPlist.strings */; };
+		C73AB6E6196470DD000AE82C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C73AB6E5196470DD000AE82C /* main.m */; };
+		C73AB6EA196470DD000AE82C /* SECMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C73AB6E9196470DD000AE82C /* SECMAppDelegate.m */; };
+		C73AB6ED196470DD000AE82C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C73AB6EB196470DD000AE82C /* Main.storyboard */; };
+		C73AB6F0196470DD000AE82C /* SECMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73AB6EF196470DD000AE82C /* SECMViewController.m */; };
+		C73AB6F2196470DD000AE82C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C73AB6F1196470DD000AE82C /* Images.xcassets */; };
+		C73AB6F9196470DD000AE82C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73AB6F8196470DD000AE82C /* XCTest.framework */; };
+		C73AB6FA196470DD000AE82C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73AB6D9196470DD000AE82C /* Foundation.framework */; };
+		C73AB6FB196470DD000AE82C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73AB6DD196470DD000AE82C /* UIKit.framework */; };
+		C73AB703196470DD000AE82C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C73AB701196470DD000AE82C /* InfoPlist.strings */; };
+		C73AB705196470DD000AE82C /* SimpleECMWizardDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C73AB704196470DD000AE82C /* SimpleECMWizardDemoTests.m */; };
+		C73AB713196471FB000AE82C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73AB712196471FB000AE82C /* CoreData.framework */; };
+		C73AB71519647213000AE82C /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C73AB71419647213000AE82C /* libc++.dylib */; };
+		C73AB7171964728F000AE82C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73AB7161964728F000AE82C /* AssetsLibrary.framework */; };
+		C75424F3196C6BAB0074951F /* SimpleECM Image Processing SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75424F2196C6BAB0074951F /* SimpleECM Image Processing SDK.framework */; };
+		C75424F5196C6BAF0074951F /* SimpleECM Image Processing SDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C75424F4196C6BAF0074951F /* SimpleECM Image Processing SDK.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C73AB6FC196470DD000AE82C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C73AB6CE196470DD000AE82C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C73AB6D5196470DD000AE82C;
+			remoteInfo = SimpleECMWizardDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C73AB6D6196470DD000AE82C /* SimpleECMWizardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleECMWizardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C73AB6D9196470DD000AE82C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C73AB6DB196470DD000AE82C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C73AB6DD196470DD000AE82C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C73AB6E1196470DD000AE82C /* SimpleECMWizardDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleECMWizardDemo-Info.plist"; sourceTree = "<group>"; };
+		C73AB6E3196470DD000AE82C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C73AB6E5196470DD000AE82C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C73AB6E7196470DD000AE82C /* SimpleECMWizardDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleECMWizardDemo-Prefix.pch"; sourceTree = "<group>"; };
+		C73AB6E8196470DD000AE82C /* SECMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SECMAppDelegate.h; sourceTree = "<group>"; };
+		C73AB6E9196470DD000AE82C /* SECMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SECMAppDelegate.m; sourceTree = "<group>"; };
+		C73AB6EC196470DD000AE82C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C73AB6EE196470DD000AE82C /* SECMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SECMViewController.h; sourceTree = "<group>"; };
+		C73AB6EF196470DD000AE82C /* SECMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SECMViewController.m; sourceTree = "<group>"; };
+		C73AB6F1196470DD000AE82C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C73AB6F7196470DD000AE82C /* SimpleECMWizardDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleECMWizardDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C73AB6F8196470DD000AE82C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C73AB700196470DD000AE82C /* SimpleECMWizardDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleECMWizardDemoTests-Info.plist"; sourceTree = "<group>"; };
+		C73AB702196470DD000AE82C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C73AB704196470DD000AE82C /* SimpleECMWizardDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleECMWizardDemoTests.m; sourceTree = "<group>"; };
+		C73AB712196471FB000AE82C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C73AB71419647213000AE82C /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		C73AB7161964728F000AE82C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		C75424F2196C6BAB0074951F /* SimpleECM Image Processing SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "SimpleECM Image Processing SDK.framework"; sourceTree = "<group>"; };
+		C75424F4196C6BAF0074951F /* SimpleECM Image Processing SDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "SimpleECM Image Processing SDK.bundle"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C73AB6D3196470DD000AE82C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C73AB7171964728F000AE82C /* AssetsLibrary.framework in Frameworks */,
+				C73AB71519647213000AE82C /* libc++.dylib in Frameworks */,
+				C73AB713196471FB000AE82C /* CoreData.framework in Frameworks */,
+				C75424F3196C6BAB0074951F /* SimpleECM Image Processing SDK.framework in Frameworks */,
+				C73AB6DC196470DD000AE82C /* CoreGraphics.framework in Frameworks */,
+				C73AB6DE196470DD000AE82C /* UIKit.framework in Frameworks */,
+				C73AB6DA196470DD000AE82C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C73AB6F4196470DD000AE82C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C73AB6F9196470DD000AE82C /* XCTest.framework in Frameworks */,
+				C73AB6FB196470DD000AE82C /* UIKit.framework in Frameworks */,
+				C73AB6FA196470DD000AE82C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C73AB6CD196470DD000AE82C = {
+			isa = PBXGroup;
+			children = (
+				C73AB6DF196470DD000AE82C /* SimpleECMWizardDemo */,
+				C73AB6FE196470DD000AE82C /* SimpleECMWizardDemoTests */,
+				C73AB6D8196470DD000AE82C /* Frameworks */,
+				C73AB6D7196470DD000AE82C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C73AB6D7196470DD000AE82C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C73AB6D6196470DD000AE82C /* SimpleECMWizardDemo.app */,
+				C73AB6F7196470DD000AE82C /* SimpleECMWizardDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C73AB6D8196470DD000AE82C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C75424F2196C6BAB0074951F /* SimpleECM Image Processing SDK.framework */,
+				C73AB7161964728F000AE82C /* AssetsLibrary.framework */,
+				C73AB71419647213000AE82C /* libc++.dylib */,
+				C73AB712196471FB000AE82C /* CoreData.framework */,
+				C73AB6D9196470DD000AE82C /* Foundation.framework */,
+				C73AB6DB196470DD000AE82C /* CoreGraphics.framework */,
+				C73AB6DD196470DD000AE82C /* UIKit.framework */,
+				C73AB6F8196470DD000AE82C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C73AB6DF196470DD000AE82C /* SimpleECMWizardDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C73AB6E8196470DD000AE82C /* SECMAppDelegate.h */,
+				C73AB6E9196470DD000AE82C /* SECMAppDelegate.m */,
+				C73AB6EB196470DD000AE82C /* Main.storyboard */,
+				C73AB6EE196470DD000AE82C /* SECMViewController.h */,
+				C73AB6EF196470DD000AE82C /* SECMViewController.m */,
+				C73AB6F1196470DD000AE82C /* Images.xcassets */,
+				C73AB6E0196470DD000AE82C /* Supporting Files */,
+			);
+			path = SimpleECMWizardDemo;
+			sourceTree = "<group>";
+		};
+		C73AB6E0196470DD000AE82C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C75424F4196C6BAF0074951F /* SimpleECM Image Processing SDK.bundle */,
+				C73AB6E1196470DD000AE82C /* SimpleECMWizardDemo-Info.plist */,
+				C73AB6E2196470DD000AE82C /* InfoPlist.strings */,
+				C73AB6E5196470DD000AE82C /* main.m */,
+				C73AB6E7196470DD000AE82C /* SimpleECMWizardDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C73AB6FE196470DD000AE82C /* SimpleECMWizardDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C73AB704196470DD000AE82C /* SimpleECMWizardDemoTests.m */,
+				C73AB6FF196470DD000AE82C /* Supporting Files */,
+			);
+			path = SimpleECMWizardDemoTests;
+			sourceTree = "<group>";
+		};
+		C73AB6FF196470DD000AE82C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C73AB700196470DD000AE82C /* SimpleECMWizardDemoTests-Info.plist */,
+				C73AB701196470DD000AE82C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C73AB6D5196470DD000AE82C /* SimpleECMWizardDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C73AB708196470DD000AE82C /* Build configuration list for PBXNativeTarget "SimpleECMWizardDemo" */;
+			buildPhases = (
+				C73AB6D2196470DD000AE82C /* Sources */,
+				C73AB6D3196470DD000AE82C /* Frameworks */,
+				C73AB6D4196470DD000AE82C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleECMWizardDemo;
+			productName = SimpleECMWizardDemo;
+			productReference = C73AB6D6196470DD000AE82C /* SimpleECMWizardDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C73AB6F6196470DD000AE82C /* SimpleECMWizardDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C73AB70B196470DD000AE82C /* Build configuration list for PBXNativeTarget "SimpleECMWizardDemoTests" */;
+			buildPhases = (
+				C73AB6F3196470DD000AE82C /* Sources */,
+				C73AB6F4196470DD000AE82C /* Frameworks */,
+				C73AB6F5196470DD000AE82C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C73AB6FD196470DD000AE82C /* PBXTargetDependency */,
+			);
+			name = SimpleECMWizardDemoTests;
+			productName = SimpleECMWizardDemoTests;
+			productReference = C73AB6F7196470DD000AE82C /* SimpleECMWizardDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C73AB6CE196470DD000AE82C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SECM;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Document Capture Technologies Inc.";
+				TargetAttributes = {
+					C73AB6F6196470DD000AE82C = {
+						TestTargetID = C73AB6D5196470DD000AE82C;
+					};
+				};
+			};
+			buildConfigurationList = C73AB6D1196470DD000AE82C /* Build configuration list for PBXProject "SimpleECMWizardDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C73AB6CD196470DD000AE82C;
+			productRefGroup = C73AB6D7196470DD000AE82C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C73AB6D5196470DD000AE82C /* SimpleECMWizardDemo */,
+				C73AB6F6196470DD000AE82C /* SimpleECMWizardDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C73AB6D4196470DD000AE82C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C73AB6F2196470DD000AE82C /* Images.xcassets in Resources */,
+				C73AB6E4196470DD000AE82C /* InfoPlist.strings in Resources */,
+				C75424F5196C6BAF0074951F /* SimpleECM Image Processing SDK.bundle in Resources */,
+				C73AB6ED196470DD000AE82C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C73AB6F5196470DD000AE82C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C73AB703196470DD000AE82C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C73AB6D2196470DD000AE82C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C73AB6EA196470DD000AE82C /* SECMAppDelegate.m in Sources */,
+				C73AB6F0196470DD000AE82C /* SECMViewController.m in Sources */,
+				C73AB6E6196470DD000AE82C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C73AB6F3196470DD000AE82C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C73AB705196470DD000AE82C /* SimpleECMWizardDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C73AB6FD196470DD000AE82C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C73AB6D5196470DD000AE82C /* SimpleECMWizardDemo */;
+			targetProxy = C73AB6FC196470DD000AE82C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C73AB6E2196470DD000AE82C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C73AB6E3196470DD000AE82C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C73AB6EB196470DD000AE82C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C73AB6EC196470DD000AE82C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C73AB701196470DD000AE82C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C73AB702196470DD000AE82C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C73AB706196470DD000AE82C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C73AB707196470DD000AE82C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C73AB709196470DD000AE82C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleECMWizardDemo/SimpleECMWizardDemo-Prefix.pch";
+				INFOPLIST_FILE = "SimpleECMWizardDemo/SimpleECMWizardDemo-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C73AB70A196470DD000AE82C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleECMWizardDemo/SimpleECMWizardDemo-Prefix.pch";
+				INFOPLIST_FILE = "SimpleECMWizardDemo/SimpleECMWizardDemo-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C73AB70C196470DD000AE82C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleECMWizardDemo.app/SimpleECMWizardDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleECMWizardDemo/SimpleECMWizardDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SimpleECMWizardDemoTests/SimpleECMWizardDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C73AB70D196470DD000AE82C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleECMWizardDemo.app/SimpleECMWizardDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleECMWizardDemo/SimpleECMWizardDemo-Prefix.pch";
+				INFOPLIST_FILE = "SimpleECMWizardDemoTests/SimpleECMWizardDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C73AB6D1196470DD000AE82C /* Build configuration list for PBXProject "SimpleECMWizardDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C73AB706196470DD000AE82C /* Debug */,
+				C73AB707196470DD000AE82C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C73AB708196470DD000AE82C /* Build configuration list for PBXNativeTarget "SimpleECMWizardDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C73AB709196470DD000AE82C /* Debug */,
+				C73AB70A196470DD000AE82C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C73AB70B196470DD000AE82C /* Build configuration list for PBXNativeTarget "SimpleECMWizardDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C73AB70C196470DD000AE82C /* Debug */,
+				C73AB70D196470DD000AE82C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C73AB6CE196470DD000AE82C /* Project object */;
+}

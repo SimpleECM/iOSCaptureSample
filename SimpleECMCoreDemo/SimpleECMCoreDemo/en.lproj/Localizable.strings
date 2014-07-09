@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  SimpleScan
+
+  Copyright (c) 2014 Document Capture Technologies Inc. All rights reserved.
+*/
+
+"doneKey" = "Done";
+"cancelKey" = "Cancel";
+"brightnessKey" = "Brightness:";
+"contrastKey" = "Contrast:";
+
+//iPad
+
+"brightnessAndContrastKey" = "Bightness & Contrast";
+"rotationKey" = "Rotate";
+"rotateLeftKey" = "Left";
+"rotateRightKey" = "Right";
+"takeAPhotoKey" = "Take a Photo";
+"pickAPhotoKey" = "Pick a Photo";
+"blackAndWhiteKey" = "Black And White";
+"grayscaleKey" = "Grayscale";
+"dewarpKey" = "Dewarp";
+
+//iPhone
+
+"brightnessAndContrastKeyIphone" = "B&C";
+"rotationKeyIphone" = "RT";
+"rotateLeftKeyIphone" = "LT";
+"rotateRightKeyIphone" = "RT";
+"takeAPhotoKeyIphone" = "TP";
+"pickAPhotoKeyIphone" = "PP";
+"blackAndWhiteKeyIphone" = "B&W";
+"grayscaleKeyIphone" = "GS";
+"dewarpKeyIphone" = "DW";

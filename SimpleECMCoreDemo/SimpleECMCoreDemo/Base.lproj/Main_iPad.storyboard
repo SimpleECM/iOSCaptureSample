@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="12F37" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="ImageEditorView">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ljt-yY-CgK">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="980"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HnS-85-AAr">
+                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="5hS-vb-VqH"/>
+                                    <barButtonItem title="Brightness &amp; Contrast" id="XRZ-O7-ZdV">
+                                        <connections>
+                                            <action selector="brightnessAndContrastTapped:" destination="8bC-Xf-vdC" id="6Yo-T8-aeY"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="aA9-8c-RGs"/>
+                                    <barButtonItem title="Rotation" id="d1u-1l-LWj">
+                                        <connections>
+                                            <action selector="rotationTapped:" destination="8bC-Xf-vdC" id="1xr-Qa-LV9"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="IbD-ni-yU8"/>
+                                    <barButtonItem title="Left" id="Tsp-To-Wk5">
+                                        <connections>
+                                            <action selector="rotateLeftTapped:" destination="8bC-Xf-vdC" id="8sw-Qh-uNR"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ge3-VZ-Mjf"/>
+                                    <barButtonItem title="Right" id="CPI-r1-AIi">
+                                        <connections>
+                                            <action selector="rotateRightTapped:" destination="8bC-Xf-vdC" id="JoD-aF-oZz"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="7c0-Nc-cOP"/>
+                                    <barButtonItem title="Take a Photo" id="CDR-LD-FPh">
+                                        <connections>
+                                            <action selector="takePhotoTapped:" destination="8bC-Xf-vdC" id="WLg-bd-fFP"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Maf-bI-Prb"/>
+                                    <barButtonItem title="Pick a Photo" id="ssf-4P-MqG">
+                                        <connections>
+                                            <action selector="pickPhotoTapped:" destination="8bC-Xf-vdC" id="Jsn-Ls-xDh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="sF6-cm-ALg"/>
+                                    <barButtonItem title="Black &amp; White" id="tat-26-0Gn">
+                                        <connections>
+                                            <action selector="blackAndWhiteTapped:" destination="8bC-Xf-vdC" id="e7w-2U-uJL"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="0eE-p4-fEd"/>
+                                    <barButtonItem title="Grayscale" id="1nj-dF-vi7">
+                                        <connections>
+                                            <action selector="pressGrayscaleTapped:" destination="8bC-Xf-vdC" id="wHW-WH-XNG"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="fDf-x8-ura"/>
+                                    <barButtonItem title="Dewarp" id="fha-wc-2VW">
+                                        <connections>
+                                            <action selector="dewarpTapped:" destination="8bC-Xf-vdC" id="OIN-y8-Tai"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="iif-vL-4GB"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ljt-yY-CgK" firstAttribute="leading" secondItem="HnS-85-AAr" secondAttribute="leading" id="CCe-tV-doH"/>
+                            <constraint firstAttribute="trailing" secondItem="HnS-85-AAr" secondAttribute="trailing" id="GFn-rt-5Hn"/>
+                            <constraint firstItem="ljt-yY-CgK" firstAttribute="trailing" secondItem="HnS-85-AAr" secondAttribute="trailing" id="RWO-ql-G3e"/>
+                            <constraint firstItem="HnS-85-AAr" firstAttribute="top" secondItem="ljt-yY-CgK" secondAttribute="bottom" id="lgE-fF-D5T"/>
+                            <constraint firstItem="HnS-85-AAr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="o2o-EU-ztT"/>
+                            <constraint firstItem="ljt-yY-CgK" firstAttribute="width" secondItem="HnS-85-AAr" secondAttribute="height" multiplier="192:11" id="tau-Yp-onV"/>
+                            <constraint firstItem="ljt-yY-CgK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xdo-vq-d7r"/>
+                            <constraint firstAttribute="bottom" secondItem="HnS-85-AAr" secondAttribute="bottom" id="z0c-Ao-3z6"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="blackAndWhiteButton" destination="tat-26-0Gn" id="THl-uZ-Ziy"/>
+                            <outlet property="brightnessAndContrastButton" destination="XRZ-O7-ZdV" id="5i7-tU-aSe"/>
+                            <outlet property="dewarpButton" destination="fha-wc-2VW" id="DP7-wm-0xw"/>
+                            <outlet property="grayscaleButton" destination="1nj-dF-vi7" id="f0R-DC-swl"/>
+                            <outlet property="imageView" destination="ljt-yY-CgK" id="blG-vA-kCn"/>
+                            <outlet property="pickAPhotoButton" destination="ssf-4P-MqG" id="sBc-6a-6Hm"/>
+                            <outlet property="rotateLeftButton" destination="Tsp-To-Wk5" id="OfY-9J-Hzp"/>
+                            <outlet property="rotateRightButton" destination="CPI-r1-AIi" id="bB4-HE-d8i"/>
+                            <outlet property="rotationButton" destination="d1u-1l-LWj" id="8y5-tN-4Mj"/>
+                            <outlet property="takeAPhotoButton" destination="CDR-LD-FPh" id="qcf-4N-Awc"/>
+                            <outlet property="toolbar" destination="HnS-85-AAr" id="7h0-FF-hWZ"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="imageEditorView" destination="8bC-Xf-vdC" id="HRv-Cc-uuS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-271" y="-22"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

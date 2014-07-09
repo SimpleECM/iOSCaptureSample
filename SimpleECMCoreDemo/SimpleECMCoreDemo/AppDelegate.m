@@ -13,11 +13,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    NSString *filePathToLicense = [[NSBundle mainBundle] pathForResource:@"dct-license" ofType:@""];
+    /**
+    NSString *filePathToLicense = [[NSBundle mainBundle] pathForResource:@"license" ofType:@""];
     NSData *license = [NSData dataWithContentsOfFile:filePathToLicense];
-    NSString *filePathToSignedLicense = [[NSBundle mainBundle] pathForResource:@"dct-license" ofType:@"signed"];
+    NSString *filePathToSignedLicense = [[NSBundle mainBundle] pathForResource:@"license" ofType:@"signed"];
     NSData *signedLicense = [NSData dataWithContentsOfFile:filePathToSignedLicense];
     [SECMLicense verifyLicense:license withSignedLicense:signedLicense];
+     */
     return YES;
 }
 							

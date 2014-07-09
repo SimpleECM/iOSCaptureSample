@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<style>
+		*{margin:0;padding:0;}
+		body {
+		    font:13.34px helvetica,arial,freesans,clean,sans-serif;
+		    color:black;
+		    line-height:1.4em;
+		    background-color: #F8F8F8;
+		    padding: 0.7em;
+		}
+		p {
+		    margin:1em 0;
+		    line-height:1.5em;
+		}
+		table {
+		    font-size:inherit;
+		    font:100%;
+		    margin:1em;
+		}
+		table th{border-bottom:1px solid #bbb;padding:.2em 1em;}
+		table td{border-bottom:1px solid #ddd;padding:.2em 1em;}
+		input[type=text],input[type=password],input[type=image],textarea{font:99% helvetica,arial,freesans,sans-serif;}
+		select,option{padding:0 .25em;}
+		optgroup{margin-top:.5em;}
+		pre,code{font:12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;}
+		pre {
+		    margin:1em 0;
+		    font-size:12px;
+		    background-color:#eee;
+		    border:1px solid #ddd;
+		    padding:5px;
+		    line-height:1.5em;
+		    color:#444;
+		    overflow:auto;
+		    -webkit-box-shadow:rgba(0,0,0,0.07) 0 1px 2px inset;
+		    -webkit-border-radius:3px;
+		    -moz-border-radius:3px;border-radius:3px;
+		}
+		pre code {
+		    padding:0;
+		    font-size:12px;
+		    background-color:#eee;
+		    border:none;
+		}
+		code {
+		    font-size:12px;
+		    background-color:#f8f8ff;
+		    color:#444;
+		    padding:0 .2em;
+		    border:1px solid #dedede;
+		}
+		img{border:0;max-width:100%;}
+		abbr{border-bottom:none;}
+		a{color:#4183c4;text-decoration:none;}
+		a:hover{text-decoration:underline;}
+		a code,a:link code,a:visited code{color:#4183c4;}
+		h2,h3{margin:1em 0;}
+		h1,h2,h3,h4,h5,h6{border:0;}
+		h1{font-size:170%;border-top:4px solid #aaa;padding-top:.5em;margin-top:1.5em;}
+		h1:first-child{margin-top:0;padding-top:.25em;border-top:none;}
+		h2{font-size:150%;margin-top:1.5em;border-top:4px solid #e0e0e0;padding-top:.5em;}
+		h3{margin-top:1em;}
+		hr{border:1px solid #ddd;}
+		ul{margin:1em 0 1em 2em;}
+		ol{margin:1em 0 1em 2em;}
+		ul li,ol li{margin-top:.5em;margin-bottom:.5em;}
+		ul ul,ul ol,ol ol,ol ul{margin-top:0;margin-bottom:0;}
+		blockquote{margin:1em 0;border-left:5px solid #ddd;padding-left:.6em;color:#555;}
+		dt{font-weight:bold;margin-left:1em;}
+		dd{margin-left:2em;margin-bottom:1em;}
+		.warning{background-color: #FFDD73; padding: 5px;}
+		@media screen and (min-width: 768px) {
+		    body {
+		        width: 748px;
+		        margin:10px auto;
+		    }
+		}
+		</style>
+		<title>Simple ECM Image Processing SDK for iOS</title>
+	</head>
+	<body>
+		<h1>
+			Simple ECM Image Processing SDK for iOS
+		</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium tempus dolor, sed aliquet justo venenatis at. Suspendisse sollicitudin mi gravida libero interdum pharetra. Phasellus dapibus justo ipsum, et accumsan elit facilisis eget. Quisque sit amet nisl nec massa interdum malesuada. Pellentesque a consequat libero. Pellentesque magna mauris, gravida sit amet elementum sed, placerat vel ligula. Etiam non porta ante, a pellentesque nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo neque, tempus nec dapibus sed, auctor vitae lacus. Cras vehicula dolor vitae metus pharetra posuere. Aliquam tincidunt nulla nec sapien luctus, in congue tortor aliquet. Aenean molestie varius imperdiet.
+		</p>
+		<p>
+			<img src="docImage.png" style="display:block; margin:auto;" alt="Screenshot" title="">
+		</p>
+		<h2>
+			Features
+		</h2>
+		<ul>
+			<li>Provides a wizard view that will handle the document capture flow for you. It includes:
+				<ul>
+					<li>Image dewarping</li>
+					<li>Brightness and contrast adjustment</li>
+					<li>Clockwise and counterclockwise rotation</li>
+					<li>Outputs a PDF, PNG or JPEG files</li>
+					<li>Persistent storage</li>					
+					<li>Notifies of user interaction events</li>
+				</ul>
+			</li>
+			<li>Also provides access to convert an image to black and white, or grayscale programmatically
+			</li>
+			<li>Export as PDF, JPG and PNG
+			</li>
+		</ul>
+		<h2>
+			Quick Setup for the Wizard
+		</h2>
+		<h3>
+			1. Include the required dependencies:
+		</h3>
+		<ul>
+			<li>Foundation</li>
+			<li>UIKit</li>			
+			<li>CoreGraphics</li>
+			<li>CoreData</li>
+			<li>AssetsLibrary</li>
+			<li>libc++</li>
+		</ul>
+		<h3>
+			2. Include the SDK files
+		</h3>
+		<ul>
+			<li>SimpleECM Image Processing SDK.framework</li>
+			<li>SimpleECM Image Processing SDK.bundle</li>
+			<li>License files and signature</li>
+		</ul>
+		Whenever you need to import the headers, use
+		<pre>
+			<code>
+#import &lt;SimpleECM Image Processing SDK/SECM_Image_Processing.h&gt;
+			</code>
+		</pre>
+		<h3>
+			3. Configure the build settings
+		</h3>
+		Your application's product name must match with your license.<br/>
+		The supported architectures are armv7, armv7s, arm64.<br/>
+		Add the <b>-ObjC</b> option to the <b>Other Linker Flags</b> build setting.
+		
+		<h3>
+			4. Verify your license
+		</h3>
+		In your <b>AppDelegate</b>'s <b>-(void)application:didFinishLaunchingWithOptions:</b> method, load your license and your signed license files and pass them to <b>+ [SECMLicense verifyLicense:withSignedLicense:]</b>
+		<pre>
+			<code>
+NSData *license = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"licenseFile" ofType:@""]];
+NSData *signature = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"licenseFile" ofType:@"signed"]];
+[SECMLicense verifyLicense:license withSignedLicense:signature];
+			</code>
+		</pre>
+		<p class ="warning"><b>Note:</b> If you don't verify the license, the SDK won't apply any of the operations to the images</p>
+		<h3>
+			5. Create an <b>SECMCaptureDocumentWizardBuilder</b> instance
+		</h3>
+		<pre>
+			<code>
+SECMCaptureDocumentWizardBuilder *builder = [[SECMCaptureDocumentWizardBuilder alloc] init];
+			</code>
+		</pre>
+		<h3>
+			6. Configure the wizard builder	
+		</h3>
+			You can customize different display options in the wizard. To do so, just set the different properties it has before creating the wizard. If you don't set a property, it will be ignored and the wizard will use its default values<br/>
+			For example, by setting the following properties, you can modify the wizard's navigation bar colors.
+		<pre>
+			<code>
+@property (nonatomic, strong) UIColor *navigationBarBarTintColor;
+@property (nonatomic, strong) UIColor *navigationBarTintColor;
+			</code>
+		</pre>
+		<p class="warning">
+			<b>Note:</b> the wizard will set the <b>UINavigationBar</b>'s <b>barTintColor</b> property regardless of the iOS version the user is running. If you're supporting <b>iOS 6</b>, do not set the barTintColor properties in the builder.
+		</p>
+			
+			
+		<h3>
+			7. Set the builder's delegate
+		</h3>
+			The wizard will notify its delegate whenever the it is closed or the capture is finished.
+		<pre>
+			<code>
+builder.delegate = self;
+			</code>
+		</pre>
+			
+		<h3>
+			8. Create and present the wizard
+		</h3>
+		<pre>
+			<code>
+UIViewController *wizard = [builder createDocumentWizardController];
+[self presentViewController:wizard animated:YES completion:^{}];
+			</code>
+		</pre>	
+		<h3>
+			Implementing the SECMCaptureDocumentWizardDelegate
+		</h3>
+		When the user closes the capture, the wizard will notify its delegate using the following method:
+		<pre>
+			<code>				
+- (void)documentBuilderDidClose:(SECMDocumentBuilder *)builder deleting:(BOOL)deleting;
+			</code>
+		</pre>
+		The <b>deleting</b> flag will specify if the user wants to delete the document.<br/>
+		You can do so using the method <b>-[SECMDocumentBuilder deleteDocument]</b>
+		<br/>
+		When the user finishes the capture, the wizard will notify its delegate using the following method:
+		<pre>
+			<code>
+- (void)documentBuilderDidFinish:(SECMDocumentBuilder *)builder;
+			</code>
+		</pre>
+		You can obtain the captured images by using the <b>SECMDocumentBuilder</b>'s methods:
+		<pre>
+			<code>
+//Build a pdf with all the enhanced images
+- (void)buildPDFDocument;
+
+//Obtain the built pdf 
+- (NSData *)PDFDocument;
+			
+			
+//Access each image individually using the following methods
+
+//returns the number of images
+- (NSUInteger)numberOfImages;
+
+//returns the enhanced image (with brightness and contrast, and rotation applied)
+- (UIImage *)enhancedImageAtIndex:(NSUInteger)index;
+			</code>
+		</pre>
+		<p class="warning">
+			<b>Note:</b> It is your responsibility to dismiss the wizard by calling -[UIViewController dismissViewControllerAnimated:completion:]
+		</p>
+		<h2>
+			Using the Core SDK functions
+		</h2>
+		If you require something different from what the wizard provides, you can use the Core SDK functions instead. To do so, you create an <b>SECMImage</b> object and initialize it with an UIImage object.
+		<pre>
+			<code>
+/**
+ Adjust the brightness and contrast of an image. Modifies the current SECMImage object.
+ @param float brightness the brightness modifier. Range goes from -1.0f to 1.0f.
+ @param float contrast the contrast modifier. Range goes from 0.0f to 2.0f.
+ */
+- (void)adjustBrightness:(float) brightness andContrast:(float) contrast;
+
+/**
+ Converts the image to black and white. Modifies the current image object.
+ */
+- (void)convertToBlackAndWhite;
+
+/**
+ Converts the image to grayscale. Modifies the current SECMImage object.
+ */
+- (void)convertToGrayScale;
+
+
+/**
+ Rotates the image to a fixed angle. Modifies the current SECMImage object.
+ @param SECMImageRotation rotation the desired rotation. Options are available in SECMImageRotation.
+ */
+- (void)rotateFixed:(SECMImageRotation)rotation;
+
+
+/**
+ Rotates the image. Modifies the current SECMImage object.
+ @param float degrees the rotation angle
+ */
+- (void)rotate:(float)degrees;
+
+
+/**
+ Dewarps a quadrangle in the image
+ @param SECMQuadrangle *quadrangle the quadrangle to be dewarped
+ */
+- (void)dewarpWithQuadrangle:(SECMQuadrangle *)quadrangle;
+			</code>
+		</pre>
+		<p class="warning">The <b>SECMImage</b> object is mutable, and applying the image operations on it will change its contents.</p><br/>
+		Once you've applied the operations to the <b>SECMImage</b>, you can obtain a UIImage from it using its <b>image</b> property. You can also use the <b>SECMExporter</b> to export the <b>SECMImage</b> directly to a PDF, PNG or JPEG file.
+		
+		<h3>Multithreading</h3>
+		The SDK provides NSOperations (<b>SECMImageOperation</b> and its sublcasses) for each operation. Once the operations are completed, they notify the delegate through the <b>-(void)SECMImageOperation:didFinishWithResult:</b> method. You can then obtain information from the passed dictionary using the following constants:
+		<pre>
+			<code>
+extern NSString * const SECMImageOperationOutputImage; ///< Key to obtain the resulting image from the results dictionary
+extern NSString * const SECMImageOperationName; ///< Key to obtain the operation name from the results dictionary
+
+//For the adjust brightness and contrast operation
+extern NSString * const SECMImageOperationBrightness;///< Key to obtain the brightness modifier in the results dictionary
+extern NSString * const SECMImageOperationContrast;///< Key to obtain the contrast modifier in the results dictionary
+
+//For the fixed rotation operation
+extern NSString * const SECMImageOperationFixedRotationValue;///< the desired fixed rotation angle
+
+//For the rotation operation
+extern NSString * const SECMImageOperationRotationAngle;///< the rotation angle
+
+//For the dewarp operation
+extern NSString * const SECMImageOperationQuadrangle;///< the quadrangle to be dewarped
+			</code>
+		</pre>
+		
+		
+		
+		
+	</body>
+</html>

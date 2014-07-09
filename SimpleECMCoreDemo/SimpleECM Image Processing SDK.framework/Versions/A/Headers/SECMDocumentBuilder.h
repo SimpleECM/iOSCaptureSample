@@ -11,46 +11,39 @@
 
 @interface SECMDocumentBuilder : NSObject
 
+/**
+ Singleton instance in charge of building the document
+ @return a shared SECMDocumentBuilder instance used by the wizard
+ */
 + (SECMDocumentBuilder *)sharedDocumentBuilder;
 
-- (void)prepareToAddImage;
-- (void)cancelAdding;
-
-- (void)prepareToChangeImageAtIndex:(NSUInteger)index;
-- (void)cancelChanges;
-- (void)commitChanges;
-
-- (void)handleSelectedImage:(UIImage *)image;
-- (void)handleDewarpedImage:(UIImage *)image;
-- (void)handleEnhancedImage:(UIImage *)image;
-- (void)setBrightness:(float)brightness contrast:(float)contrast andRotation:(int)rotation;
-
-- (void)deleteImageAtIndex:(NSUInteger)index;
-- (void)moveImageFromIndex:(NSUInteger)sourceIndex toIndex:(NSUInteger)destinationIndex;
-
-- (UIImage *)imageAtIndex:(NSUInteger)index;
-- (UIImage *)dewarpedImageAtIndex:(NSUInteger)index;
+/**
+ Gets the captured and processed image at the given index
+ @param NSUInteger index the image's index
+ @return UIImage object with the image
+ */
 - (UIImage *)enhancedImageAtIndex:(NSUInteger)index;
-- (UIImage *)thumbnailAtIndex:(NSUInteger)index;
 
-- (float)brightness;
-- (float)contrast;
-- (int)rotation;
-
-- (NSArray *)quad;
-- (void)setQuadWithValues:(NSArray *)values;
-
-- (UIImage *)image;
-- (UIImage *)dewarpedImage;
-- (UIImage *)enhancedImage;
-
+/**
+ Gets the number of captured and processed images
+ @return NSUInteger with the number of images
+ */
 - (NSUInteger)numberOfImages;
 
-- (void)clearCache;
 
+/**
+ Builds a PDF document with the images
+ */
 - (void)buildPDFDocument;
+
+/**
+ Gets the built PDF document
+ */
 - (NSData *)PDFDocument;
 
+/**
+ Deletes the whole document (all the images captured)
+ */
 - (void)deleteDocument;
 
 @end

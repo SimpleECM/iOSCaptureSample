@@ -19,6 +19,7 @@ var hierarchy =
         [ "SECMBrightnessAndContrastOperation", "interface_s_e_c_m_brightness_and_contrast_operation.html", null ],
         [ "SECMConvertToBlackAndWhiteOperation", "interface_s_e_c_m_convert_to_black_and_white_operation.html", null ],
         [ "SECMConvertToGrayScaleOperation", "interface_s_e_c_m_convert_to_gray_scale_operation.html", null ],
+        [ "SECMDetectEdgesOperation", "interface_s_e_c_m_detect_edges_operation.html", null ],
         [ "SECMDewarpOperation", "interface_s_e_c_m_dewarp_operation.html", null ],
         [ "SECMFixedRotationOperation", "interface_s_e_c_m_fixed_rotation_operation.html", null ],
         [ "SECMRotationOperation", "interface_s_e_c_m_rotation_operation.html", null ]

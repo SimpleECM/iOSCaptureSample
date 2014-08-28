@@ -1,6 +1,7 @@
 var searchData=
 [
   ['camerarollbuttontitle',['cameraRollButtonTitle',['../interface_s_e_c_m_capture_document_wizard_builder.html#aea8459089f3f4d0f9fe4048282ed3676',1,'SECMCaptureDocumentWizardBuilder']]],
+  ['cancelbuttontitle',['cancelButtonTitle',['../interface_s_e_c_m_capture_document_wizard_builder.html#ad2b74d202e8972398268c527d0c30717',1,'SECMCaptureDocumentWizardBuilder']]],
   ['closeactionsheetcanceltitle',['closeActionSheetCancelTitle',['../interface_s_e_c_m_capture_document_wizard_builder.html#a0b1d2c84ef5a36208123b560bdf63947',1,'SECMCaptureDocumentWizardBuilder']]],
   ['closeactionsheetexitanddeletetitle',['closeActionSheetExitAndDeleteTitle',['../interface_s_e_c_m_capture_document_wizard_builder.html#a47ad9426909002c72f6a0f91d9e7e0ee',1,'SECMCaptureDocumentWizardBuilder']]],
   ['closeactionsheetonlyexittitle',['closeActionSheetOnlyExitTitle',['../interface_s_e_c_m_capture_document_wizard_builder.html#a4abf011a25968fab1f3bddb3634329dd',1,'SECMCaptureDocumentWizardBuilder']]],

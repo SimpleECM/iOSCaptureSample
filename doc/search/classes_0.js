@@ -5,6 +5,7 @@ var searchData=
   ['secmcapturedocumentwizarddelegate_2dp',['SECMCaptureDocumentWizardDelegate-p',['../protocol_s_e_c_m_capture_document_wizard_delegate-p.html',1,'']]],
   ['secmconverttoblackandwhiteoperation',['SECMConvertToBlackAndWhiteOperation',['../interface_s_e_c_m_convert_to_black_and_white_operation.html',1,'']]],
   ['secmconverttograyscaleoperation',['SECMConvertToGrayScaleOperation',['../interface_s_e_c_m_convert_to_gray_scale_operation.html',1,'']]],
+  ['secmdetectedgesoperation',['SECMDetectEdgesOperation',['../interface_s_e_c_m_detect_edges_operation.html',1,'']]],
   ['secmdewarpoperation',['SECMDewarpOperation',['../interface_s_e_c_m_dewarp_operation.html',1,'']]],
   ['secmdocumentbuilder',['SECMDocumentBuilder',['../interface_s_e_c_m_document_builder.html',1,'']]],
   ['secmexporter',['SECMExporter',['../interface_s_e_c_m_exporter.html',1,'']]],

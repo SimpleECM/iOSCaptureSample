@@ -5,6 +5,7 @@ var annotated =
     [ "<SECMCaptureDocumentWizardDelegate>", "protocol_s_e_c_m_capture_document_wizard_delegate-p.html", "protocol_s_e_c_m_capture_document_wizard_delegate-p" ],
     [ "SECMConvertToBlackAndWhiteOperation", "interface_s_e_c_m_convert_to_black_and_white_operation.html", null ],
     [ "SECMConvertToGrayScaleOperation", "interface_s_e_c_m_convert_to_gray_scale_operation.html", null ],
+    [ "SECMDetectEdgesOperation", "interface_s_e_c_m_detect_edges_operation.html", null ],
     [ "SECMDewarpOperation", "interface_s_e_c_m_dewarp_operation.html", "interface_s_e_c_m_dewarp_operation" ],
     [ "SECMDocumentBuilder", "interface_s_e_c_m_document_builder.html", "interface_s_e_c_m_document_builder" ],
     [ "SECMExporter", "interface_s_e_c_m_exporter.html", null ],

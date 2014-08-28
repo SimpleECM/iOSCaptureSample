@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.7"/>
-<title>SimpleECM Image Processing SDK: SECMConvertToGrayscaleOperation.h Source File</title>
+<title>SimpleECM Image Processing SDK: SECMDetectEdgesOperation.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -83,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('_s_e_c_m_convert_to_grayscale_operation_8h_source.html','');});
+$(document).ready(function(){initNavTree('_s_e_c_m_detect_edges_operation_8h_source.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -102,34 +102,39 @@ $(document).ready(function(){initNavTree('_s_e_c_m_convert_to_grayscale_operatio
 
 <div class="header">
   <div class="headertitle">
-<div class="title">SECMConvertToGrayscaleOperation.h</div>  </div>
+<div class="title">SECMDetectEdgesOperation.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_s_e_c_m_convert_to_grayscale_operation_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  SECMConvertToGrayscaleOperation.h</span></div>
+<a href="_s_e_c_m_detect_edges_operation_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  SECMDetectEdgesOperation.h</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  SimpleECM Image Processing SDK</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by Tsen Fong Chung Lee on 5/27/14.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by Tsen Fong Chung Lee on 8/6/14.</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright (c) 2014 Document Capture Technologies Inc. All rights reserved.</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_s_e_c_m_image_operation_8h.html">SECMImageOperation.h</a>&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">extern</span> NSString * <span class="keyword">const</span> <a class="code" href="_s_e_c_m_convert_to_grayscale_operation_8h.html#a5a8e00afd0ab4baaea9c1cead8d9abef">SECMImageOperationConvertToGrayScale</a>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="interface_s_e_c_m_convert_to_gray_scale_operation.html">   16</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_s_e_c_m_convert_to_gray_scale_operation.html">SECMConvertToGrayScaleOperation</a> : <a class="code" href="interface_s_e_c_m_image_operation.html">SECMImageOperation</a></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">extern</span> NSString * <span class="keyword">const</span> <a class="code" href="_s_e_c_m_detect_edges_operation_8h.html#a41717234a0350ba587f7c98e045ee9ec">SECMImageOperationDetectEdges</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">extern</span> NSString * <span class="keyword">const</span> <a class="code" href="_s_e_c_m_detect_edges_operation_8h.html#a9527f4618deec2cc1fcd7d61115c0926">SECMImageOperationDetectedQuadrangle</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">extern</span> NSString * <span class="keyword">const</span> <a class="code" href="_s_e_c_m_detect_edges_operation_8h.html#a8c8df8b923e64bcd3a319f00c87e2d18">SECMImageOperationQuadrangleAptitude</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="interface_s_e_c_m_detect_edges_operation.html">   19</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_s_e_c_m_detect_edges_operation.html">SECMDetectEdgesOperation</a> : <a class="code" href="interface_s_e_c_m_image_operation.html">SECMImageOperation</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">@end</span></div>
 <div class="ttc" id="_s_e_c_m_image_operation_8h_html"><div class="ttname"><a href="_s_e_c_m_image_operation_8h.html">SECMImageOperation.h</a></div></div>
-<div class="ttc" id="interface_s_e_c_m_convert_to_gray_scale_operation_html"><div class="ttname"><a href="interface_s_e_c_m_convert_to_gray_scale_operation.html">SECMConvertToGrayScaleOperation</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_e_c_m_convert_to_grayscale_operation_8h_source.html#l00016">SECMConvertToGrayscaleOperation.h:16</a></div></div>
 <div class="ttc" id="interface_s_e_c_m_image_operation_html"><div class="ttname"><a href="interface_s_e_c_m_image_operation.html">SECMImageOperation</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_e_c_m_image_operation_8h_source.html#l00031">SECMImageOperation.h:31</a></div></div>
-<div class="ttc" id="_s_e_c_m_convert_to_grayscale_operation_8h_html_a5a8e00afd0ab4baaea9c1cead8d9abef"><div class="ttname"><a href="_s_e_c_m_convert_to_grayscale_operation_8h.html#a5a8e00afd0ab4baaea9c1cead8d9abef">SECMImageOperationConvertToGrayScale</a></div><div class="ttdeci">NSString *const SECMImageOperationConvertToGrayScale</div><div class="ttdoc">the operation&#39;s name in the results dictionary </div></div>
+<div class="ttc" id="_s_e_c_m_detect_edges_operation_8h_html_a41717234a0350ba587f7c98e045ee9ec"><div class="ttname"><a href="_s_e_c_m_detect_edges_operation_8h.html#a41717234a0350ba587f7c98e045ee9ec">SECMImageOperationDetectEdges</a></div><div class="ttdeci">NSString *const SECMImageOperationDetectEdges</div><div class="ttdoc">The operation&#39;s name in the results dictionary. </div></div>
+<div class="ttc" id="interface_s_e_c_m_detect_edges_operation_html"><div class="ttname"><a href="interface_s_e_c_m_detect_edges_operation.html">SECMDetectEdgesOperation</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_e_c_m_detect_edges_operation_8h_source.html#l00019">SECMDetectEdgesOperation.h:19</a></div></div>
+<div class="ttc" id="_s_e_c_m_detect_edges_operation_8h_html_a9527f4618deec2cc1fcd7d61115c0926"><div class="ttname"><a href="_s_e_c_m_detect_edges_operation_8h.html#a9527f4618deec2cc1fcd7d61115c0926">SECMImageOperationDetectedQuadrangle</a></div><div class="ttdeci">NSString *const SECMImageOperationDetectedQuadrangle</div><div class="ttdoc">Key to obtain the detected quadrangle from the results dictionary. </div></div>
+<div class="ttc" id="_s_e_c_m_detect_edges_operation_8h_html_a8c8df8b923e64bcd3a319f00c87e2d18"><div class="ttname"><a href="_s_e_c_m_detect_edges_operation_8h.html#a8c8df8b923e64bcd3a319f00c87e2d18">SECMImageOperationQuadrangleAptitude</a></div><div class="ttdeci">NSString *const SECMImageOperationQuadrangleAptitude</div><div class="ttdoc">Key to obtain the detected quadrangle&#39;s aptitude from the results dictionary (values goes from 0 to 1...</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_51d8d9f44e400e53aa45ce8377c8fa72.html">SimpleECM Image Processing SDK</a></li><li class="navelem"><a class="el" href="dir_360fcc05fc661ff5e39de2ad810ecd63.html">public</a></li><li class="navelem"><a class="el" href="_s_e_c_m_convert_to_grayscale_operation_8h.html">SECMConvertToGrayscaleOperation.h</a></li>
+    <li class="navelem"><a class="el" href="dir_51d8d9f44e400e53aa45ce8377c8fa72.html">SimpleECM Image Processing SDK</a></li><li class="navelem"><a class="el" href="dir_360fcc05fc661ff5e39de2ad810ecd63.html">public</a></li><li class="navelem"><a class="el" href="_s_e_c_m_detect_edges_operation_8h.html">SECMDetectEdgesOperation.h</a></li>
     <li class="footer">Generated on Thu Aug 28 2014 17:07:43 for SimpleECM Image Processing SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>

@@ -20,12 +20,15 @@ var searchData=
   ['secmimageoperationcontrast',['SECMImageOperationContrast',['../_s_e_c_m_brightness_and_contrast_operation_8h.html#a0b9b8e65dc02a484ac140054db2f8ea6',1,'SECMBrightnessAndContrastOperation.h']]],
   ['secmimageoperationconverttoblackandwhite',['SECMImageOperationConvertToBlackAndWhite',['../_s_e_c_m_convert_to_black_and_white_operation_8h.html#a94415d5c9efda3da441909b9ad8317d4',1,'SECMConvertToBlackAndWhiteOperation.h']]],
   ['secmimageoperationconverttograyscale',['SECMImageOperationConvertToGrayScale',['../_s_e_c_m_convert_to_grayscale_operation_8h.html#a5a8e00afd0ab4baaea9c1cead8d9abef',1,'SECMConvertToGrayscaleOperation.h']]],
+  ['secmimageoperationdetectedges',['SECMImageOperationDetectEdges',['../_s_e_c_m_detect_edges_operation_8h.html#a41717234a0350ba587f7c98e045ee9ec',1,'SECMDetectEdgesOperation.h']]],
+  ['secmimageoperationdetectedquadrangle',['SECMImageOperationDetectedQuadrangle',['../_s_e_c_m_detect_edges_operation_8h.html#a9527f4618deec2cc1fcd7d61115c0926',1,'SECMDetectEdgesOperation.h']]],
   ['secmimageoperationdewarp',['SECMImageOperationDewarp',['../_s_e_c_m_dewarp_operation_8h.html#ae836d4d671dac1ea8a32cfe1c3c446b6',1,'SECMDewarpOperation.h']]],
   ['secmimageoperationfixedrotation',['SECMImageOperationFixedRotation',['../_s_e_c_m_fixed_rotation_operation_8h.html#a57aacebfb7544356d3658a7a775a0b0a',1,'SECMFixedRotationOperation.h']]],
   ['secmimageoperationfixedrotationvalue',['SECMImageOperationFixedRotationValue',['../_s_e_c_m_fixed_rotation_operation_8h.html#a381a2fe2ea287fbb5edfe22d543bd98f',1,'SECMFixedRotationOperation.h']]],
   ['secmimageoperationname',['SECMImageOperationName',['../_s_e_c_m_image_operation_8h.html#ad9c98b5ca881c047f9e044b441759f54',1,'SECMImageOperation.h']]],
   ['secmimageoperationoutputimage',['SECMImageOperationOutputImage',['../_s_e_c_m_image_operation_8h.html#aa3e891ed675a319c8016d483950f2b4d',1,'SECMImageOperation.h']]],
   ['secmimageoperationquadrangle',['SECMImageOperationQuadrangle',['../_s_e_c_m_dewarp_operation_8h.html#a10d7ed24d5ebe48b320db3d88b4653a1',1,'SECMDewarpOperation.h']]],
+  ['secmimageoperationquadrangleaptitude',['SECMImageOperationQuadrangleAptitude',['../_s_e_c_m_detect_edges_operation_8h.html#a8c8df8b923e64bcd3a319f00c87e2d18',1,'SECMDetectEdgesOperation.h']]],
   ['secmimageoperationrotation',['SECMImageOperationRotation',['../_s_e_c_m_rotation_operation_8h.html#aca216d6f72e8878a311786204d319f22',1,'SECMRotationOperation.h']]],
   ['secmimageoperationrotationangle',['SECMImageOperationRotationAngle',['../_s_e_c_m_rotation_operation_8h.html#a125dcd54a360a20ce44f4ead2cca371e',1,'SECMRotationOperation.h']]]
 ];

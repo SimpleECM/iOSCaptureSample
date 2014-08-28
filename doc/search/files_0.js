@@ -6,6 +6,7 @@ var searchData=
   ['secmcapturedocumentwizarddelegate_2eh',['SECMCaptureDocumentWizardDelegate.h',['../_s_e_c_m_capture_document_wizard_delegate_8h.html',1,'']]],
   ['secmconverttoblackandwhiteoperation_2eh',['SECMConvertToBlackAndWhiteOperation.h',['../_s_e_c_m_convert_to_black_and_white_operation_8h.html',1,'']]],
   ['secmconverttograyscaleoperation_2eh',['SECMConvertToGrayscaleOperation.h',['../_s_e_c_m_convert_to_grayscale_operation_8h.html',1,'']]],
+  ['secmdetectedgesoperation_2eh',['SECMDetectEdgesOperation.h',['../_s_e_c_m_detect_edges_operation_8h.html',1,'']]],
   ['secmdewarpoperation_2eh',['SECMDewarpOperation.h',['../_s_e_c_m_dewarp_operation_8h.html',1,'']]],
   ['secmdocumentbuilder_2eh',['SECMDocumentBuilder.h',['../_s_e_c_m_document_builder_8h.html',1,'']]],
   ['secmevents_2eh',['SECMEvents.h',['../_s_e_c_m_events_8h.html',1,'']]],

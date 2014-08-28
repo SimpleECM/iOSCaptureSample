@@ -10,6 +10,7 @@ var files =
     ] ],
     [ "SECMConvertToBlackAndWhiteOperation.h", "_s_e_c_m_convert_to_black_and_white_operation_8h.html", "_s_e_c_m_convert_to_black_and_white_operation_8h" ],
     [ "SECMConvertToGrayscaleOperation.h", "_s_e_c_m_convert_to_grayscale_operation_8h.html", "_s_e_c_m_convert_to_grayscale_operation_8h" ],
+    [ "SECMDetectEdgesOperation.h", "_s_e_c_m_detect_edges_operation_8h.html", "_s_e_c_m_detect_edges_operation_8h" ],
     [ "SECMDewarpOperation.h", "_s_e_c_m_dewarp_operation_8h.html", "_s_e_c_m_dewarp_operation_8h" ],
     [ "SECMDocumentBuilder.h", "_s_e_c_m_document_builder_8h.html", [
       [ "SECMDocumentBuilder", "interface_s_e_c_m_document_builder.html", "interface_s_e_c_m_document_builder" ]

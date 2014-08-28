@@ -8,5 +8,6 @@ var searchData=
   ['initwithsecmimage_3aandquadrangle_3a',['initWithSECMImage:andQuadrangle:',['../interface_s_e_c_m_dewarp_operation.html#a2a82c3f773be11b3cdc4c6d835848f1b',1,'SECMDewarpOperation']]],
   ['initwithsecmimage_3aandrotation_3a',['initWithSECMImage:andRotation:',['../interface_s_e_c_m_fixed_rotation_operation.html#a235ffbb1347f7c45b7b3a4022a76bbe9',1,'SECMFixedRotationOperation']]],
   ['initwithsecmimage_3abrightness_3aandcontrast_3a',['initWithSECMImage:brightness:andContrast:',['../interface_s_e_c_m_brightness_and_contrast_operation.html#aef4c25caaa701983df4d8d560e50c996',1,'SECMBrightnessAndContrastOperation']]],
+  ['initwithsecmquadrangle_3a',['initWithSECMQuadrangle:',['../interface_s_e_c_m_quadrangle.html#a06392514b5cc2e91d148753a0ab7c76d',1,'SECMQuadrangle']]],
   ['initwithtopleft_3atopright_3abottomleft_3abottomright_3a',['initWithTopLeft:topRight:bottomLeft:bottomRight:',['../interface_s_e_c_m_quadrangle.html#a12666b21f0933a1557904c24ec6a94c7',1,'SECMQuadrangle']]]
 ];

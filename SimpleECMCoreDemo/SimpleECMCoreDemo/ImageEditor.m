@@ -10,6 +10,7 @@
 
 NSString * const imageEditorFinishedOperation = @"finishedOperation";
 NSString * const imageEditorReturnedImage = @"image";
+NSString * const imageEditorReturnedResults = @"imageEditorReturnedResults";
 
 @interface ImageEditor()
 @property (strong, nonatomic)NSOperationQueue *queue;
@@ -112,6 +113,14 @@ NSString * const imageEditorReturnedImage = @"image";
     [self imageEditorSaveDefaultImage];
 }
 
+- (void)imageEditorDetectEdges
+{
+    SECMDetectEdgesOperation *detectEdgesOperation = [[SECMDetectEdgesOperation alloc] initWithSECMImage:self.sImage];
+    detectEdgesOperation.delegate = self;
+    [self.queue addOperation:detectEdgesOperation];
+    [self imageEditorSaveDefaultImage];
+}
+
 #pragma - mark SECMImageOperation Delegate
 
 - (void)SECMImageOperation:(SECMImageOperation *)operation didFinishWithResult:(NSDictionary *)imageOperationResults
@@ -120,10 +129,8 @@ NSString * const imageEditorReturnedImage = @"image";
     self.sImage = outputSECMImage;
     UIImage *outputImage = outputSECMImage.image;
     [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-        [[NSNotificationCenter defaultCenter] postNotificationName:imageEditorFinishedOperation object:nil userInfo:@{imageEditorReturnedImage: outputImage}];
+        [[NSNotificationCenter defaultCenter] postNotificationName:imageEditorFinishedOperation object:nil userInfo:@{imageEditorReturnedImage: outputImage, imageEditorReturnedResults: imageOperationResults }];
     }];
-    
-
 }
 
 @end

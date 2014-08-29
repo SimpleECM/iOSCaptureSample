@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="12F37" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -77,6 +77,11 @@
                                     <barButtonItem title="Dewarp" id="fha-wc-2VW">
                                         <connections>
                                             <action selector="dewarpTapped:" destination="8bC-Xf-vdC" id="OIN-y8-Tai"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Detect" id="QRG-Xy-wAe">
+                                        <connections>
+                                            <action selector="detectEdgesTapped:" destination="8bC-Xf-vdC" id="TV3-y0-9so"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="iif-vL-4GB"/>

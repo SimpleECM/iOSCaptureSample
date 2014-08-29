@@ -329,6 +329,75 @@ static float const lineWidth = (UIUserInterfaceIdiomPhone ? 1.5f : 2.2f);
     [self drawPathWithPointTopLeft:topLeftPoint.center pointTopRight:topRightPoint.center pointBottomLeft:bottomLeftPoint.center pointBottomRight:bottomRightPoint.center];
 }
 
+- (void)addDewarpPointsToViewTopLeft:(CGPoint)topLeft topRight:(CGPoint)topRight bottomLeft:(CGPoint)bottomLeft bottomRight:(CGPoint)bottomRight
+{
+
+    DewarpPointView *topLeftPoint = [[DewarpPointView alloc] initWithFrame:CGRectMake(0, 0 , dewarpPointSize, dewarpPointSize)];
+    topLeftPoint.center = [self translatedViewPointFromImagePoint:topLeft];
+
+    DewarpPointView *topRightPoint = [[DewarpPointView alloc] initWithFrame:CGRectMake(0, 0 , dewarpPointSize, dewarpPointSize)];
+    topRightPoint.center = [self translatedViewPointFromImagePoint:topRight];
+
+    DewarpPointView *bottomLeftPoint = [[DewarpPointView alloc] initWithFrame:CGRectMake(0, 0, dewarpPointSize, dewarpPointSize)];
+    bottomLeftPoint.center = [self translatedViewPointFromImagePoint:bottomLeft];
+
+    DewarpPointView *bottomRightPoint = [[DewarpPointView alloc] initWithFrame:CGRectMake(0, 0, dewarpPointSize, dewarpPointSize)];
+    bottomRightPoint.center = [self translatedViewPointFromImagePoint:bottomRight];
+    
+    topRightPoint.delegate = self;
+    topLeftPoint.delegate = self;
+    bottomRightPoint.delegate = self;
+    bottomLeftPoint.delegate = self;
+    
+    [topRightPoint setIdentifier:dewarpPointTopRight];
+    [topLeftPoint setIdentifier:dewarpPointTopLeft];
+    [bottomRightPoint setIdentifier:dewarpPointBottomRight];
+    [bottomLeftPoint setIdentifier:dewarpPointBottomLeft];
+    
+    [self.imageView addSubview:topRightPoint];
+    [self.imageView addSubview:topLeftPoint];
+    [self.imageView addSubview:bottomRightPoint];
+    [self.imageView addSubview:bottomLeftPoint];
+    
+    [self drawPathWithPointTopLeft:topLeftPoint.center pointTopRight:topRightPoint.center pointBottomLeft:bottomLeftPoint.center pointBottomRight:bottomRightPoint.center];
+}
+
+- (CGPoint)translatedViewPointFromImagePoint:(CGPoint)imagePoint
+{
+    CGPoint viewPoint = imagePoint;
+    
+    CGSize imageSize = self.imageView.image.size;
+    CGSize viewSize = self.imageView.frame.size;
+    
+    float viewRatio  = viewSize.width / viewSize.height;
+    float imageRatio = imageSize.width / imageSize.height;
+    
+    //rs > ri ? (wi * hs/hi, hs) : (ws, hi * ws/wi)
+    if (viewRatio > imageRatio) {
+        //scale the y
+        float normalizedY = imagePoint.y / imageSize.height;
+        viewPoint.y = normalizedY * viewSize.height;
+        
+        //translate the x to the origin, since the image is centered in the view, and then scale
+        float margin = (imageSize.width - viewSize.width * imageSize.height / viewSize.height);
+        float normalizedX = (imagePoint.x - (margin / 2))/ (imageSize.width - margin);
+        viewPoint.x = normalizedX * viewSize.width;
+    }
+    else {
+        //scale the x
+        float normalizedX = imagePoint.x / imageSize.width;
+        viewPoint.x = normalizedX * viewSize.width;
+        
+        //translate the y to the origin, since the image is centered in the view, and then scale
+        float margin = (imageSize.height - viewSize.height * imageSize.width / viewSize.width);
+        float normalizedY = (imagePoint.y - (margin / 2))/ (imageSize.height - margin);
+        viewPoint.y = normalizedY * viewSize.height;
+    }
+    
+    return viewPoint;
+}
+
+
 /**
  Method that draws the Dewarp Shape
  @param CGPoint topLeft Point located in the top left of the image 
@@ -593,12 +662,14 @@ static float const lineWidth = (UIUserInterfaceIdiomPhone ? 1.5f : 2.2f);
 
 - (IBAction)takePhotoTapped:(id)sender
 {
+    [self cleanView];
     [self.delegate imageEditorViewDidTakePhoto:self];
     [self resetFlags];
 }
 
 - (IBAction)pickPhotoTapped:(id)sender
 {
+    [self cleanView];
     [self.delegate imageEditorViewDidPickPhoto:self];
 }
 
@@ -657,6 +728,14 @@ static float const lineWidth = (UIUserInterfaceIdiomPhone ? 1.5f : 2.2f);
         self.isRotationToggleOn = YES;
     }
     [self.delegate imageEditorViewDidSaveImage:self];
+}
+
+- (IBAction)detectEdgesTapped:(id)sender
+{
+    if (self.imageView.image) {
+        [self cleanView];
+        [self.delegate imageEditorViewDidDetectEdges:self];
+    }
 }
 
 @end

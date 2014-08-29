@@ -24,8 +24,8 @@
 		C73AB713196471FB000AE82C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73AB712196471FB000AE82C /* CoreData.framework */; };
 		C73AB71519647213000AE82C /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C73AB71419647213000AE82C /* libc++.dylib */; };
 		C73AB7171964728F000AE82C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73AB7161964728F000AE82C /* AssetsLibrary.framework */; };
-		C75424F3196C6BAB0074951F /* SimpleECM Image Processing SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75424F2196C6BAB0074951F /* SimpleECM Image Processing SDK.framework */; };
-		C75424F5196C6BAF0074951F /* SimpleECM Image Processing SDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C75424F4196C6BAF0074951F /* SimpleECM Image Processing SDK.bundle */; };
+		C7B24A5919AFF13700C3FB8D /* SimpleECM Image Processing SDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C7B24A5819AFF13700C3FB8D /* SimpleECM Image Processing SDK.bundle */; };
+		C7B24A6719AFFFC400C3FB8D /* SimpleECM Image Processing SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B24A6619AFFFC400C3FB8D /* SimpleECM Image Processing SDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +61,8 @@
 		C73AB712196471FB000AE82C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C73AB71419647213000AE82C /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		C73AB7161964728F000AE82C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		C75424F2196C6BAB0074951F /* SimpleECM Image Processing SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "SimpleECM Image Processing SDK.framework"; sourceTree = "<group>"; };
-		C75424F4196C6BAF0074951F /* SimpleECM Image Processing SDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "SimpleECM Image Processing SDK.bundle"; sourceTree = "<group>"; };
+		C7B24A5819AFF13700C3FB8D /* SimpleECM Image Processing SDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "SimpleECM Image Processing SDK.bundle"; sourceTree = "<group>"; };
+		C7B24A6619AFFFC400C3FB8D /* SimpleECM Image Processing SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "SimpleECM Image Processing SDK.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 				C73AB7171964728F000AE82C /* AssetsLibrary.framework in Frameworks */,
 				C73AB71519647213000AE82C /* libc++.dylib in Frameworks */,
 				C73AB713196471FB000AE82C /* CoreData.framework in Frameworks */,
-				C75424F3196C6BAB0074951F /* SimpleECM Image Processing SDK.framework in Frameworks */,
+				C7B24A6719AFFFC400C3FB8D /* SimpleECM Image Processing SDK.framework in Frameworks */,
 				C73AB6DC196470DD000AE82C /* CoreGraphics.framework in Frameworks */,
 				C73AB6DE196470DD000AE82C /* UIKit.framework in Frameworks */,
 				C73AB6DA196470DD000AE82C /* Foundation.framework in Frameworks */,
@@ -115,7 +115,7 @@
 		C73AB6D8196470DD000AE82C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C75424F2196C6BAB0074951F /* SimpleECM Image Processing SDK.framework */,
+				C7B24A6619AFFFC400C3FB8D /* SimpleECM Image Processing SDK.framework */,
 				C73AB7161964728F000AE82C /* AssetsLibrary.framework */,
 				C73AB71419647213000AE82C /* libc++.dylib */,
 				C73AB712196471FB000AE82C /* CoreData.framework */,
@@ -144,7 +144,7 @@
 		C73AB6E0196470DD000AE82C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C75424F4196C6BAF0074951F /* SimpleECM Image Processing SDK.bundle */,
+				C7B24A5819AFF13700C3FB8D /* SimpleECM Image Processing SDK.bundle */,
 				C73AB6E1196470DD000AE82C /* SimpleECMWizardDemo-Info.plist */,
 				C73AB6E2196470DD000AE82C /* InfoPlist.strings */,
 				C73AB6E5196470DD000AE82C /* main.m */,
@@ -250,7 +250,7 @@
 			files = (
 				C73AB6F2196470DD000AE82C /* Images.xcassets in Resources */,
 				C73AB6E4196470DD000AE82C /* InfoPlist.strings in Resources */,
-				C75424F5196C6BAF0074951F /* SimpleECM Image Processing SDK.bundle in Resources */,
+				C7B24A5919AFF13700C3FB8D /* SimpleECM Image Processing SDK.bundle in Resources */,
 				C73AB6ED196470DD000AE82C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

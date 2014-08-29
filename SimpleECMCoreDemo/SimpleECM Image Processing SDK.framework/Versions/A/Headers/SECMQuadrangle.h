@@ -26,4 +26,6 @@
  */
 - (id)initWithTopLeft:(CGPoint)topLeft topRight:(CGPoint)topRight bottomLeft:(CGPoint)bottomLeft bottomRight:(CGPoint)bottomRight;
 
+- (id)initWithSECMQuadrangle:(SECMQuadrangle *)quadrangle;
+
 @end

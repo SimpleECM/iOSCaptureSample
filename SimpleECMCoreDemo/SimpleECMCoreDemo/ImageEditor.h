@@ -10,6 +10,7 @@
 
 extern NSString * const imageEditorFinishedOperation; ///< Notification name to use when the operation is finished
 extern NSString * const imageEditorReturnedImage; ///< Image returned from the Operation
+extern NSString * const imageEditorReturnedResults; ///< The results returned from the Operation
 
 @protocol ImageEditorDelegate <NSObject>
 
@@ -76,6 +77,11 @@ extern NSString * const imageEditorReturnedImage; ///< Image returned from the O
  @param NSDictionary *positions Dictionary that contains the position of each Dewarp Point on the ImageView
  */
 - (void)imageEditorApplyDewarpWithPosition:(NSDictionary *)positions;
+
+/**
+ Method that detects a document in the image
+ */
+- (void)imageEditorDetectEdges;
 
 /**
  ImageEditorDelegate Delegate

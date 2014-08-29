@@ -60,6 +60,7 @@ typedef enum {
  */
 - (void)rotate:(float)degrees;
 
+- (SECMQuadrangle *)detectEdgesAndAptitude:(float *)aptitude;
 
 /**
  Dewarps a quadrangle in the image

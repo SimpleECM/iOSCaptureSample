@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		645DFE71195F5CB90093DFF1 /* SimpleECM Image Processing SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD0AB5B1958F06E00A169D7 /* SimpleECM Image Processing SDK.framework */; };
 		64930BF4196B59B300B802E2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64930BF6196B59B300B802E2 /* Localizable.strings */; };
+		C7B24A6019AFF87200C3FB8D /* SimpleECM Image Processing SDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C7B24A5E19AFF87200C3FB8D /* SimpleECM Image Processing SDK.bundle */; };
+		C7B24A6119AFF87200C3FB8D /* SimpleECM Image Processing SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B24A5F19AFF87200C3FB8D /* SimpleECM Image Processing SDK.framework */; };
 		FD430F8D1948A6B800061D9C /* ImageEditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD430F8C1948A6B800061D9C /* ImageEditorView.m */; };
 		FD4FDA811949079800E50A54 /* DewarpPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4FDA801949079800E50A54 /* DewarpPointView.m */; };
 		FD50FD90195DD2920084429D /* ImageEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = FD50FD8F195DD2920084429D /* ImageEditor.m */; };
@@ -43,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		64930BF5196B59B300B802E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C7B24A5E19AFF87200C3FB8D /* SimpleECM Image Processing SDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "SimpleECM Image Processing SDK.bundle"; sourceTree = "<group>"; };
+		C7B24A5F19AFF87200C3FB8D /* SimpleECM Image Processing SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "SimpleECM Image Processing SDK.framework"; sourceTree = "<group>"; };
 		FD430F8B1948A6B800061D9C /* ImageEditorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageEditorView.h; sourceTree = "<group>"; };
 		FD430F8C1948A6B800061D9C /* ImageEditorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ImageEditorView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		FD4FDA7F1949079800E50A54 /* DewarpPointView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DewarpPointView.h; sourceTree = "<group>"; };
@@ -72,8 +75,6 @@
 		FDA1820619475C64004D86DF /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		FDA3F9ED196CCC7000235035 /* InformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationViewController.h; sourceTree = "<group>"; };
 		FDA3F9EE196CCC7000235035 /* InformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationViewController.m; sourceTree = "<group>"; };
-		FDD0AB591958EFC600A169D7 /* SimpleECM Image Processing SDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "SimpleECM Image Processing SDK.bundle"; sourceTree = "<group>"; };
-		FDD0AB5B1958F06E00A169D7 /* SimpleECM Image Processing SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "SimpleECM Image Processing SDK.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +82,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				645DFE71195F5CB90093DFF1 /* SimpleECM Image Processing SDK.framework in Frameworks */,
 				FDA1820719475C64004D86DF /* libc++.dylib in Frameworks */,
 				FDA181BF19475B74004D86DF /* CoreGraphics.framework in Frameworks */,
+				C7B24A6119AFF87200C3FB8D /* SimpleECM Image Processing SDK.framework in Frameworks */,
 				FDA181C119475B74004D86DF /* UIKit.framework in Frameworks */,
 				FDA181BD19475B74004D86DF /* Foundation.framework in Frameworks */,
 			);
@@ -164,8 +165,8 @@
 		FDA181BB19475B74004D86DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FDD0AB5B1958F06E00A169D7 /* SimpleECM Image Processing SDK.framework */,
-				FDD0AB591958EFC600A169D7 /* SimpleECM Image Processing SDK.bundle */,
+				C7B24A5E19AFF87200C3FB8D /* SimpleECM Image Processing SDK.bundle */,
+				C7B24A5F19AFF87200C3FB8D /* SimpleECM Image Processing SDK.framework */,
 				FDA1820619475C64004D86DF /* libc++.dylib */,
 				FDA181BC19475B74004D86DF /* Foundation.framework */,
 				FDA181BE19475B74004D86DF /* CoreGraphics.framework */,
@@ -299,6 +300,7 @@
 			files = (
 				FDA181D319475B74004D86DF /* Main_iPad.storyboard in Resources */,
 				FDA181D819475B74004D86DF /* Images.xcassets in Resources */,
+				C7B24A6019AFF87200C3FB8D /* SimpleECM Image Processing SDK.bundle in Resources */,
 				64930BF4196B59B300B802E2 /* Localizable.strings in Resources */,
 				FDA181D019475B74004D86DF /* Main_iPhone.storyboard in Resources */,
 				FDA181C719475B74004D86DF /* InfoPlist.strings in Resources */,

@@ -25,5 +25,6 @@
 #import "SECMDocumentBuilder.h"
 #import "SECMExporter.h"
 #import "SECMExportOperation.h"
+#import "SECMDetectEdgesOperation.h"
 
 #endif

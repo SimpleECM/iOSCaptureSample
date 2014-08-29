@@ -70,6 +70,12 @@
 - (void)imageEditorViewDidApplyDewarp:(ImageEditorView *)imageEditor withPosition:(NSDictionary *)dewarpPointsInView;
 
 /**
+ Method that is called when the Detect Edges has to be applied to the image
+ @param ImageEditorView *imageEditor The ImageEditorView that called this method
+ */
+- (void)imageEditorViewDidDetectEdges:(ImageEditorView *)imageEditor;
+
+/**
  Method that is called when is needed to pick a photo from the library
  @param ImageEditorView *imageEditor The ImageEditorView that called this method
 */
@@ -100,5 +106,7 @@
  ImageView that contains the image to which the effects will be applied
 */
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+- (void)addDewarpPointsToViewTopLeft:(CGPoint)topLeft topRight:(CGPoint)topRight bottomLeft:(CGPoint)bottomLeft bottomRight:(CGPoint)bottomRight;
 
 @end

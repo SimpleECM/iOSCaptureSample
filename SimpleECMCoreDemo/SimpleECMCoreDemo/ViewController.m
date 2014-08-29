@@ -75,6 +75,11 @@
     [self.imageEditor imageEditorApplyRotationWithAngle:angle];
 }
 
+- (void)imageEditorViewDidDetectEdges:(ImageEditorView *)imageEditor
+{
+    [self.imageEditor imageEditorDetectEdges];
+}
+
 - (void)imageEditorViewDidTakePhoto:(ImageEditorView *)imageEditor
 {
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
@@ -106,7 +111,22 @@
 
 - (void)didOperationFinish:(NSNotification *)notification
 {
-    [self.imageEditorView.imageView setImage:[notification.userInfo objectForKey:imageEditorReturnedImage]];
+    NSDictionary *results = [notification.userInfo objectForKey:imageEditorReturnedResults];
+    if ([[results objectForKey:SECMImageOperationName] isEqualToString:SECMImageOperationDetectEdges]) {
+        SECMQuadrangle *quad = [results objectForKey:SECMImageOperationDetectedQuadrangle];
+      /*  NSString *message = [NSString stringWithFormat:@"Top Left: %@\nTop Right: %@\nBottom Left: %@\nBottom Right: %@",
+                            NSStringFromCGPoint(quad.topLeft),
+                            NSStringFromCGPoint(quad.topRight),
+                            NSStringFromCGPoint(quad.bottomLeft),
+                            NSStringFromCGPoint(quad.bottomRight)
+                            ];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Detected quadrangle" message:message delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [alert show];*/
+        [self.imageEditorView addDewarpPointsToViewTopLeft:quad.topLeft topRight:quad.topRight bottomLeft:quad.bottomLeft bottomRight:quad.bottomRight];
+    }
+    else {
+        [self.imageEditorView.imageView setImage:[notification.userInfo objectForKey:imageEditorReturnedImage]];
+    }
 }
 
 #pragma - mark UIImagePickerControllerDelegate

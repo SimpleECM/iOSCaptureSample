@@ -35,6 +35,10 @@
 @property (nonatomic, copy) NSString *cropControllerTitle;///<The 'Crop' view navigation bar title
 @property (nonatomic, copy) NSString *enhanceControllerTitle;///<The 'Enhance Image' view navigation bar title
 
+@property (nonatomic, copy) NSString *nextButtonTitle;///< The 'Next' button's title (appears as the right navigation bar button)
+@property (nonatomic, copy) NSString *cancelButtonTitle;///< The title for the buttons that cancel an action
+@property (nonatomic, copy) NSString *autoCaptureButtonTitle;///< The text that notifies the user that the app will capture the image automatically in a set time
+
 @property (nonatomic, strong) UIColor *navigationBarBarTintColor;///<The navigation bar's bar tint color property
 @property (nonatomic, strong) UIColor *navigationBarTintColor;///<The navigation bar's tint color property
 @property (nonatomic, strong) UIColor *toolbarBarTintColor;///<The toolbar's bar tint color property
@@ -60,6 +64,9 @@
 
 @property (nonatomic, assign) BOOL flashOptionHidden;///<Flag that hides the flash option buttons in the camera view
 @property (nonatomic, assign) BOOL gridOptionHidden;///<Flag that hides the grid option buttons in the camera view
+
+@property (nonatomic, assign) BOOL liveFramingEnabled;///<Flag that enables/disables the live framing in the camera view
+@property (nonatomic, assign) BOOL autoCaptureEnabled;///<Flag that enables/disables the auto capture in the camera view
 
 @property (nonatomic, weak) id<SECMCaptureDocumentWizardDelegate>delegate;///<Delegate that will handle the Wizard's events
 

@@ -275,6 +275,12 @@ UIViewController *wizard = [builder createDocumentWizardController];
  */
 - (void)rotate:(float)degrees;
 
+/**
+ Detects a document in the image
+ @param float *aptitude output parameter that will hold the detected quadrangle's aptitude
+ @return SECMQuadrangle the detected quadrangle
+ */
+- (SECMQuadrangle *)detectEdgesAndAptitude:(float *)aptitude;
 
 /**
  Dewarps a quadrangle in the image
@@ -305,6 +311,14 @@ extern NSString * const SECMImageOperationRotationAngle;///< the rotation angle
 
 //For the dewarp operation
 extern NSString * const SECMImageOperationQuadrangle;///< the quadrangle to be dewarped
+
+//For the detect edges operation
+extern NSString * const SECMImageOperationDetectEdges;///< The operation's name in the results dictionary
+extern NSString * const SECMImageOperationDetectedQuadrangle;///< Key to obtain the detected quadrangle from the results dictionary
+extern NSString * const SECMImageOperationQuadrangleAptitude;///< Key to obtain the detected quadrangle's aptitude from the results dictionary (values goes from 0 to 1)
+
+
+
 			</code>
 		</pre>
 		
